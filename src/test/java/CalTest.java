@@ -5,12 +5,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalTest {
 
+    @Test
     @DisplayName("getSum 2,3")
     void getSum() {
         Cal cal = new Cal();
         int expect = 5;
 
-        int actual = cal.getSumSum(1, 2, 3);
         int actual = cal.getSum(2, 3);
 
         assertEquals(expect, actual);
@@ -71,5 +71,15 @@ class CalTest {
         assertNotEquals(expected, app.getZegop(input));
     }
 
+
+
+    @Test
+    @DisplayName("getgop")
+    void getGop1() {
+        var cal = new Cal();
+        int expected = 15;
+
+        var actual = cal.getGop(3, 5);
+    }
 
 }
