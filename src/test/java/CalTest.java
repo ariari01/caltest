@@ -14,4 +14,15 @@ class CalTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    @DisplayName("getSum 2,3")
+    void getSum() {
+        Cal cal = new Cal();
+        int expect = 5;
+
+        int actual = cal.getSum(2, 3);
+
+        assertEquals(expect, actual);
+    }
 }
