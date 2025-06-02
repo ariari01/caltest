@@ -1,5 +1,5 @@
 public class Cal {
-    int getSumSum(int a,int b, int c) {
+    int getSumSum(int a, int b, int c) {
         return a + b + c;
     }
 
@@ -10,6 +10,10 @@ public class Cal {
 
         return a + b;
     }
+
+    public int getZegop(int num) {
+        return num * num;
+}
   
     int getMinus(int a, int b) {
         return a - b;
