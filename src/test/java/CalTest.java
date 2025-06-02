@@ -6,6 +6,9 @@ public class CalTest {
     @Test
     void getDivide() {
         Cal cal = new Cal();
-        assertEquals(2, cal.getDivide(10, 5));
+
+        int expected = 2;
+        int autual = cal.getDivide(10, 5);
+        assertEquals(expected, autual);
     }
 }
