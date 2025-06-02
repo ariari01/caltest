@@ -1,25 +1,47 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalTest {
 
-    @Test
-    void getMinus1() {
-        var cal = new Cal();
-        int expected = 5;
+    @DisplayName("getSum 2,3")
+    void getSum() {
+        Cal cal = new Cal();
+        int expect = 5;
 
-        var actual = cal.getMinus(10, 5);
+        int actual = cal.getSum(2, 3);
 
-        assertEquals(expected, actual);
+        assertEquals(expect, actual);
     }
 
     @Test
+    void getMinus1() {
+        Cal cal = new Cal();
+        int expected = 5;
+
+        int actual = cal.getMinus(10, 5);
+      
+        assertEquals(expected, actual);
+    }
+  
+    @Test
     void getMinus2() {
-        var cal = new Cal();
+        Cal cal = new Cal();
         int expected = -5;
 
-        var actual = cal.getMinus(5, 10);
+        int actual = cal.getMinus(5, 10);
+
+        assertEquals(expected, actual);
+    }
+  
+    @Test
+    @DisplayName("getSumSum 1,2,3")
+    void getSumSumTest() {
+        Cal cal = new Cal();
+        int expected = 6;
+
+        int actual = cal.getSumSum(1,2,3);
 
         assertEquals(expected, actual);
     }
