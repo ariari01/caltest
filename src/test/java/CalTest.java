@@ -10,6 +10,7 @@ class CalTest {
         Cal cal = new Cal();
         int expect = 5;
 
+        int actual = cal.getSumSum(1, 2, 3);
         int actual = cal.getSum(2, 3);
 
         assertEquals(expect, actual);
@@ -45,4 +46,30 @@ class CalTest {
 
         assertEquals(expected, actual);
     }
+
+
+    @Test
+    @DisplayName("제곱하는 기능 성공")
+    void getZegopSuccess() {
+        Cal app = new Cal();
+
+        int input = 3;
+        int expected = 9;
+
+        assertEquals(expected, app.getZegop(input));
+    }
+
+
+    @Test
+    @DisplayName("제곱하는 기능 실패")
+    void getZegopFail() {
+        Cal app = new Cal();
+
+        int input = 4;
+        int expected = 9;
+
+        assertNotEquals(expected, app.getZegop(input));
+    }
+
+
 }
