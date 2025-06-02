@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class Cal
+{
 
-public class Cal {
+    public int getGop(int a, int b){
+        return a*b;
+    }
 }
