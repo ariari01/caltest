@@ -74,7 +74,7 @@ class CalTest {
 
 
     @Test
-    @DisplayName("getSumSum 1,2,3")
+    @DisplayName("getgop")
     void getGop1() {
         var cal = new Cal();
         int expected = 15;
