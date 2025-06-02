@@ -13,5 +13,9 @@ public class Cal {
 
     public int getZegop(int num) {
         return num * num;
+}
+  
+    int getMinus(int a, int b) {
+        return a - b;
     }
 }
